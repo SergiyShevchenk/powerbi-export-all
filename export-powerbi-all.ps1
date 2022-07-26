@@ -54,7 +54,7 @@ $capacity_admins | Export-Csv -Path $logpath -NoTypeInformation
 
 
 #
-# Scott notes:
+# Notes:
 #    Workspace type  "Workspace"       is new workspace experience
 #                    "Group"           is old workspace experience
 #                    "PersonalGroup"   is "My Workspace" for end users
@@ -132,7 +132,7 @@ $Datasets | Export-Csv -Path $logpath -NoTypeInformation
 #################################
 
 # Loop over all datasets to get the associated datasources
-# Scott ToDo - add try/catch blocks. Some datasources blow up with error "ConvertFrom-Json : Cannot bind argument to parameter 'InputObject' because it is null."
+# ToDo - add try/catch blocks. Some datasources blow up with error "ConvertFrom-Json : Cannot bind argument to parameter 'InputObject' because it is null."
 #              I believe this is because it is an invalid data source - for example reading text file that doesn't exist, etc.
 
 Write-Host "******* Exporting Data Sources *****"
